@@ -1,7 +1,9 @@
 body {
     margin: 0px auto;
     width: 75%;
-    font-family:'Georgia', 'Serif';
+    /*font-family:'Georgia', 'Serif';*/
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
