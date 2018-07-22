@@ -13,7 +13,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    /*margin-right: 20px; */
+    margin-right: 20px; 
 }
 a {
     text-decoration: none;
@@ -72,7 +72,7 @@ img {
 nav ul{
   position:relative;
   top:37%;
-  left:2%;
+  /*left:2%;*/
 
 }
 
