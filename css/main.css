@@ -39,7 +39,6 @@ h1 {
 p {
   margin-top:0;
   margin-bottom: 0;
-  padding-right: 20px;
   font-size: 1.4em;
   line-height: 1.4em;
   color: #333;
@@ -50,6 +49,7 @@ p {
 #self {
   float:right;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 footer {
   clear:both;
