@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow:auto;
+  white-space: nowrap;
+  font-size: calc(10px + 2vmin);
+  color: #323232;
+  width:100%;
+  position:fixed;
+  background-color: white;
+  transition: 0.5s;
+}
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header a {
+  padding: 1ch;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #646464;
+
+}
+
+.header a:hover{
+  border-bottom: solid 2px #323232;
+  transition: 0.5s;
+  color: #323232;
+}
+
+.body {
+  background-color: #ffffff;
+  min-height: 100vh;/*  spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #323232;
+}
+
+.body h1 {
+  font-size: calc(10px + 1vmin);
+  text-align: center;
+
+}
+
+.body p {
+  margin:1vmin;
+  font-size: calc(10px + 1vmin);
+  text-align: center;
+}
+
+.headshot {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 100%;
+}
+
+.plus {
+  color: seagreen;
+}
+.sep {
+  text-align: center;
+}
+
+.link {
+  font-size: calc(10px + 1vmin);
+  color: #646464;
+}
+
+/*
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+*/
