@@ -1,7 +1,6 @@
 import React from 'react';
-import "./style.css";
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import styles from "./style.css";
-
 import doodle from "./doodle.jpg";
 
 function Sep() {
@@ -14,7 +13,7 @@ function Plus() {
 
 const App: React.FC = (props) => {
   return (
-    <div className="App">
+    <Router>
       <div className={styles.header}>
         <a>KELVIN FILYK</a>
         <a href="https://github.com/kfilyk/s2mosaic">S2MOSAIC</a>
@@ -25,42 +24,45 @@ const App: React.FC = (props) => {
         <a>MORI DUNOM</a>
         <a>PETRI</a>
       </div>
-      <body className={styles.body}>
-        <img src={doodle} className={styles.headshot} alt="headshot" />
-        
-        <p>
-        <h1>I am a software engineer based on the west coast 🍁. </h1>
-          C++ {Sep()} SQL {Sep()} Jenkins {Sep()} Git {Sep()} Go {Plus()} <br />
-          Node {Sep()} Django {Sep()} React {Sep()} Typescript {Plus()}{Plus()} <br />
-          Tensorflow {Sep()} PyTorch {Sep()} Keras {Sep()} OpenCV {Plus()}{Plus()}{Plus()}<br />
-        </p>
-        <a
-          className={styles.link}
-          href="mailto:kelvinfilyk@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          contact
-        </a>
-        <a
-          className={styles.link}
-          href="https://www.linkedin.com/in/kfilyk/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          linkedin
-        </a>
-        <a
-          className={styles.link}
-          href="https://github.com/kfilyk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github
-        </a>
-        
-      </body>
-    </div>
+
+      <Route exact path="/portfolio">
+        <body className={styles.body}>
+          <img src={doodle} className={styles.headshot} alt="headshot" />
+          
+          <p>
+          <h1>I am a software engineer based on the west coast 🍁. </h1>
+            C++ {Sep()} SQL {Sep()} Jenkins {Sep()} Git {Sep()} Go {Plus()} <br />
+            Node {Sep()} Django {Sep()} React {Sep()} Typescript {Plus()}{Plus()} <br />
+            Tensorflow {Sep()} PyTorch {Sep()} Keras {Sep()} OpenCV {Plus()}{Plus()}{Plus()}<br />
+          </p>
+          <a
+            className={styles.link}
+            href="mailto:kelvinfilyk@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            contact
+          </a>
+          <a
+            className={styles.link}
+            href="https://www.linkedin.com/in/kfilyk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin
+          </a>
+          <a
+            className={styles.link}
+            href="https://github.com/kfilyk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+          
+        </body>
+      </Route>
+    </Router>
   );
 }
 
