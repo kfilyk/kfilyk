@@ -25,10 +25,9 @@ const App: React.FC = (props) => {
         <a>PETRI</a>
       </div>
 
-      <Route exact path="/portfolio">
+      <Route path="/">
         <body className={styles.body}>
           <img src={doodle} className={styles.headshot} alt="headshot" />
-          
           <p>
           <h1>I am a software engineer based on the west coast 🍁. </h1>
             C++ {Sep()} SQL {Sep()} Jenkins {Sep()} Git {Sep()} Go {Plus()} <br />
