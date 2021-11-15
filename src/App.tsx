@@ -21,10 +21,10 @@ const App: React.FC = (props) => {
         <a href="https://github.com/kfilyk/s2mosaic">S2MOSAIC</a>
         <a href="https://github.com/kfilyk/cpp_accelerated_image_quantization">K-MEANS SEGMENTATION (C++)</a>
         <a href="https://certn-dash.herokuapp.com/">CERTN DASHBOARD</a>
-        <a href="https://carechanger.herokuapp.com/login/">CARECHANGER</a>
+        <a href="https://carechanger.herokuapp.com/">CARECHANGER</a>
+        <a>PETRI</a>
         <a>QUORACLE</a>
         <a>MORI DUNOM</a>
-        <a>PETRI</a>
       </div>
 
       <Route path=""> <Redirect to="/portfolio" /></Route>
