@@ -25,6 +25,7 @@ const App: React.FC = (props) => {
         <a>PETRI</a>
       </div>
 
+      <Route exact path=""> <Redirect to="/portfolio" /></Route>
       <Route exact path="/"> <Redirect to="/portfolio" /></Route>
       <Route path="/portfolio">
         <body className={styles.body}>
