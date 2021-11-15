@@ -15,7 +15,9 @@ const App: React.FC = (props) => {
   return (
     <Router>
       <div className={styles.header}>
+        <a className={styles.logo}>KELVIN FILYK</a>
         <a>KELVIN FILYK</a>
+
         <a href="https://github.com/kfilyk/s2mosaic">S2MOSAIC</a>
         <a href="https://github.com/kfilyk/cpp_accelerated_image_quantization">K-MEANS SEGMENTATION (C++)</a>
         <a href="https://certn-dash.herokuapp.com/">CERTN DASHBOARD</a>
@@ -25,8 +27,8 @@ const App: React.FC = (props) => {
         <a>PETRI</a>
       </div>
 
-      <Route exact path=""> <Redirect to="/portfolio" /></Route>
-      <Route exact path="/"> <Redirect to="/portfolio" /></Route>
+      <Route path=""> <Redirect to="/portfolio" /></Route>
+      <Route path="/"> <Redirect to="/portfolio" /></Route>
       <Route path="/portfolio">
         <body className={styles.body}>
           <img src={doodle} className={styles.headshot} alt="headshot" />

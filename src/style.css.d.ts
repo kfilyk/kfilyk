@@ -4,6 +4,7 @@ declare namespace StyleCssNamespace {
 		header: string;
 		headshot: string;
 		link: string;
+		logo: string;
 		plus: string;
 		sep: string;
 	}

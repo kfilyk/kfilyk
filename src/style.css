@@ -38,8 +38,7 @@ code {
 }
 
 .header a:hover{
-  border-bottom: solid 2px #323232;
-  transition: 0.5s;
+  box-sizing:border-box;
   color: #323232;
 }
 
@@ -81,6 +80,18 @@ code {
 .link {
   font-size: calc(10px + 1vmin);
   color: #646464;
+}
+
+.logo {
+  position: fixed;
+  background-color: #646464;
+  color: #ffffff !important;
+  border-width: 0px !important;
+
+}
+
+.logo:hover {
+  border-width: 0px !important;
 }
 
 /*
