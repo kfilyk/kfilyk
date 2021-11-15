@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import styles from "./style.css";
 import doodle from "./doodle.jpg";
 
@@ -18,14 +18,15 @@ const App: React.FC = (props) => {
         <a>KELVIN FILYK</a>
         <a href="https://github.com/kfilyk/s2mosaic">S2MOSAIC</a>
         <a href="https://github.com/kfilyk/cpp_accelerated_image_quantization">K-MEANS SEGMENTATION (C++)</a>
-        <a>CERTN DASHBOARD</a>
-        <a>CARECHANGER</a>
+        <a href="https://certn-dash.herokuapp.com/">CERTN DASHBOARD</a>
+        <a href="https://carechanger.herokuapp.com/login/">CARECHANGER</a>
         <a>QUORACLE</a>
         <a>MORI DUNOM</a>
         <a>PETRI</a>
       </div>
 
-      <Route path="/">
+      <Route exact path="/"> <Redirect to="/portfolio" /></Route>
+      <Route path="/portfolio">
         <body className={styles.body}>
           <img src={doodle} className={styles.headshot} alt="headshot" />
           <p>
