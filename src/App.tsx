@@ -22,7 +22,7 @@ const App: React.FC = (props) => {
         <a href="https://github.com/kfilyk/cpp_accelerated_image_quantization">K-MEANS SEGMENTATION (C++)</a>
         <a href="https://certn-dash.herokuapp.com/">CERTN DASHBOARD</a>
         <a href="https://carechanger.herokuapp.com/">CARECHANGER</a>
-        <a>PETRI</a>
+        <a href="https://kfilyk.github.io/petri/">PETRI</a>
         <a>QUORACLE</a>
         <a>MORI DUNOM</a>
       </div>
