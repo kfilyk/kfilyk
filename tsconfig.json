@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "ES6",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "outDir": "dist",
+    "outDir": "docs",
     "allowJs": true,
     "skipLibCheck": true,
     "inlineSourceMap": true,
