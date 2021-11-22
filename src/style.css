@@ -77,9 +77,16 @@ code {
   text-align: center;
 }
 
+.link_container {
+  display: inline-block;
+  margin-top: 20px;
+}
+
 .link {
   font-size: calc(10px + 1vmin);
   color: #646464;
+  text-align: center;
+  margin:5px;
 }
 
 .logo {

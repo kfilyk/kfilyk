@@ -2,6 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import styles from "./style.css";
 import doodle from "./doodle.jpg";
+import email from "./email.png";
+import linkedin from "./linkedin.png";
+import github from "./github.png";
+
 
 function Sep() {
   return (<var className={styles.sep}> | </var>);
@@ -26,7 +30,6 @@ const App: React.FC = (props) => {
         <a>QUORACLE</a>
         <a>MORI DUNOM</a>
       </div>
-
       <Route path=""> <Redirect to="/portfolio" /></Route>
       <Route path="/"> <Redirect to="/portfolio" /></Route>
       <Route path="/portfolio">
@@ -38,13 +41,14 @@ const App: React.FC = (props) => {
             Node {Sep()} Django {Sep()} React {Sep()} Typescript {Plus()}{Plus()} <br />
             Tensorflow {Sep()} PyTorch {Sep()} Keras {Sep()} OpenCV {Plus()}{Plus()}{Plus()}<br />
           </p>
+          <div className={styles.link_container}>
           <a
             className={styles.link}
             href="mailto:kelvinfilyk@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            contact
+            <img src={email} height='40px'/>
           </a>
           <a
             className={styles.link}
@@ -52,7 +56,7 @@ const App: React.FC = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin
+            <img src={linkedin} height='40px'/>
           </a>
           <a
             className={styles.link}
@@ -60,9 +64,9 @@ const App: React.FC = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <img src={github} height='40px'/>
           </a>
-          
+        </div>
         </body>
       </Route>
     </Router>
