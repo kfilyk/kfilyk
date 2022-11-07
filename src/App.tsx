@@ -30,9 +30,7 @@ const App: React.FC = (props) => {
         <a>QUORACLE</a>
         <a>MORI DUNOM</a>
       </div>
-      <Route path=""> <Redirect to="/portfolio" /></Route>
-      <Route path="/"> <Redirect to="/portfolio" /></Route>
-      <Route path="/portfolio">
+      <Route path="/">
         <body className={styles.body}>
           <img src={doodle} className={styles.headshot} alt="headshot" />
           <p>
@@ -69,6 +67,7 @@ const App: React.FC = (props) => {
         </div>
         </body>
       </Route>
+      <Route path="*"> <Redirect to="/" /></Route>
     </Router>
   );
 }
