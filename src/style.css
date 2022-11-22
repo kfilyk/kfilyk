@@ -68,8 +68,6 @@ code {
 .headshot {
   height: 40vmin;
   border-radius: 100%;
-  opacity:75%;
-
 }
 
 .plus {
@@ -98,28 +96,43 @@ code {
   border-width: 0px !important;
 }
 
-.logo .download_arrow {
+.logo .cv {
+  animation: 3s ease-out 0s 1 show_cv;
   position: absolute;
   transform-origin: -50% 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity:0%;
+  opacity:0;
   transition:ease-out 0.25s;
+  
+}
+
+.cv img {
+  width:40%;
+  filter: invert(1);
+  opacity: 100% !important;
+}
+
+.cv img:hover{
+  width:40%;
+  filter: invert(1);
+  opacity: 100% !important;
 }
 
 .logo .name {
-  opacity:100%;
+  animation: 3s ease-out 0s 1 show_name;
+  opacity:1;
   transition:ease-out 0.25s;
 }
 
-.logo:hover .download_arrow {
-  opacity:100%;
+.logo:hover .cv {
+  opacity:1;
   transition:ease-out 0.25s;
 }
 
 .logo:hover .name {
-  opacity:0%;
+  opacity:0;
   transition:ease-out 0.25s;
 }
 
@@ -129,14 +142,40 @@ code {
 }
 
 img {
-  opacity:60%;
+  opacity:0.75 !important;
   transition: ease-out 0.25s;
   filter: grayscale(100)
 
 }
 
 img:hover {
-  opacity:100%;
+  opacity:1 !important;
   transition: ease-out 0.25s;
   filter: grayscale(0)
 }
+
+
+@keyframes show_cv {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show_name {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

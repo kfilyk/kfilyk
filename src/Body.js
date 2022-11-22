@@ -3,6 +3,7 @@ import email from "./email.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import resume from "./resume.pdf";
+import cv from "./cv.png";
 
 import "./style.css";
 
@@ -18,7 +19,7 @@ const Body = (props) => {
     return (
       <body>
         <div className="header">
-          <a href={resume} download="kelvin_filyk_resume.pdf" className="logo"><span className="download_arrow">⤓</span><span className="name">KELVIN FILYK</span></a>
+          <a href={resume} download="kelvin_filyk_resume.pdf" className="logo"><span className="cv"><img src={cv} alt="cv"/></span><span className="name">KELVIN FILYK</span></a>
           <a href="">KELVIN FILYK</a> {/* prevents sliding header elements from dissapearing underneath logo */}
           <a href="https://kfilyk.github.io/roots/">ROOTS</a>
           <a href="https://github.com/kfilyk/s2mosaic">S2MOSAIC</a>
