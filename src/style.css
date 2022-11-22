@@ -1,3 +1,5 @@
+/* #669966 is a good colour too */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Poppins';
@@ -9,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #323232;
+  color: #646464;
 }
 
 body h1 {
@@ -38,7 +40,7 @@ code {
   overflow:auto;
   white-space: nowrap;
   font-size: calc(10px + 2vmin);
-  color: #323232;
+  color: #646464;
   width:100%;
   position:fixed;
   background-color: white;
@@ -60,18 +62,18 @@ code {
 
 .header a:hover{
   box-sizing:border-box;
-  color: #323232;
+  color: #789254;
 }
-
 
 .headshot {
   height: 40vmin;
-  pointer-events: none;
   border-radius: 100%;
+  opacity:75%;
+
 }
 
 .plus {
-  color: seagreen;
+  color: #789254;
 }
 .sep {
   text-align: center;
@@ -84,37 +86,57 @@ code {
 
 .link {
   font-size: calc(10px + 1vmin);
-  color: #646464;
+  color: #789254;
   text-align: center;
   margin:5px;
 }
 
 .logo {
-  position: fixed;
-  background-color: #646464;
+  position:fixed;
+  background-color: #789254;
   color: #ffffff !important;
   border-width: 0px !important;
+}
 
+.logo .download_arrow {
+  position: absolute;
+  transform-origin: -50% 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0%;
+  transition:ease-out 0.25s;
+}
+
+.logo .name {
+  opacity:100%;
+  transition:ease-out 0.25s;
+}
+
+.logo:hover .download_arrow {
+  opacity:100%;
+  transition:ease-out 0.25s;
+}
+
+.logo:hover .name {
+  opacity:0%;
+  transition:ease-out 0.25s;
 }
 
 .logo:hover {
   border-width: 0px !important;
+
 }
 
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  opacity:60%;
+  transition: ease-out 0.25s;
+  filter: grayscale(100)
+
 }
-*/
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+img:hover {
+  opacity:100%;
+  transition: ease-out 0.25s;
+  filter: grayscale(0)
 }
-*/

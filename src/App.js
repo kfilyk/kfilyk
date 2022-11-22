@@ -7,7 +7,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Body/>}/>
-        <Route path="*" element={<Navigate to="/"/>}/>
+        {/*<Route path="*" element={<Navigate to="/"/>}/>*/}
       </Routes>
     </Router>
   );
