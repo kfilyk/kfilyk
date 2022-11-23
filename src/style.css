@@ -111,13 +111,13 @@ code {
 .cv img {
   width:40%;
   filter: invert(1);
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .cv img:hover{
   width:40%;
   filter: invert(1);
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .logo .name {

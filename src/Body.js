@@ -3,7 +3,7 @@ import email from "./email.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import resume from "./resume.pdf";
-import cv from "./cv.png";
+import cv from "./resume.png";
 
 import "./style.css";
 
