@@ -1,8 +1,6 @@
-/* #669966 is a good colour too */
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Poppins';
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
@@ -62,7 +60,7 @@ code {
 
 .header a:hover{
   box-sizing:border-box;
-  color: #789254;
+  color: #323232;
 }
 
 .headshot {
